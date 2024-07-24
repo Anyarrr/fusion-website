@@ -16,15 +16,6 @@ p {
     margin: 0;
 }
 
-
-@media (max-width: 1279px) {
-    * {
-        font-size: 10px;
-        line-height: 19.2px;
-        color: #727272;
-    }
-}
-
 .main {
     display: flex;
     flex-direction: column;
@@ -43,7 +34,7 @@ p {
     justify-content: space-evenly;
 }
 
-.main-conteiner {
+.header__conteiner {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -53,12 +44,12 @@ p {
 }
 
 /*навигация сайта*/
-.wd{
+.wd-logo {
     width: 96px;
     height: 50px;
 }
 
-.nav-navigation {
+.menu__navigation {
     display: inline-block;
     vertical-align: top;
     margin: 5px 25px;
@@ -70,21 +61,20 @@ p {
     transform: color .2s linear;
 }
 
-.nav-navigation:hover {
+.menu__navigation:hover {
     color: #34547A;
 }
 
-
-
+/************************************************/
 
 /*ДИЗАЙН И ВЕРСТКА*/
-.intro-section {
+.intro { 
     width: 100%;
     height: 550px;
     background-color: #EEEFF1;
 }
 
-.intro-conteiner {
+.intro__conteiner {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -93,11 +83,11 @@ p {
     margin:60px auto ;  
 }
 
-.img-intro {
+.img__intro {
     margin: 30px 50px; 
 }
 
-.p-design {
+.intro_link {
 
     margin: 0px 0px 0px 101px ;
     width: 800px;
@@ -105,7 +95,7 @@ p {
    
 }
 
-.design { 
+.design-link__text   { 
     margin: 0px 0px 50px;
     font-weight: bold;
     font-size: 48px;
@@ -113,16 +103,16 @@ p {
 
 }
 
-.p-text {
+.design-link__lorem {
     width: 500px;
     margin: 0px 0px 50px;
 }
 
-#color-button {
+#design-button{
     background: #34547A;
 }
 
-.button-click {
+.design-link__button {
     
     color:white;
     width: 225px;
@@ -133,11 +123,11 @@ p {
 
 /*обо мне*/
 
-.about-start {
+.information {
     background-color: white;
 }
 
-.about-my-conteiner {
+.information__conteiner{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,13 +137,13 @@ p {
     background-color: white;
 }
 
- .my-text {
+ .information__text {
     text-align: center;
     width: 540px;
     height: 200px;
 } 
 
-.my-center {
+.information__about-me {
     text-align: center;
     font-weight:bold ;
     font-size: 32px;
@@ -162,14 +152,13 @@ p {
 }
 
 
-
 /*карточки проект*/
 
-.proect-inner {
+.proect {
     background-color: #34547A;
 }
 
-.proect-conteiner {
+.proect__conteiner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,25 +166,12 @@ p {
     flex-wrap: wrap;
 }
 
-.progect-line {
+.progect__line{
     margin: 0px 20px;
     width: 141px;
     height: 51px;
 }
 
-/* @media (max-width: 1279px) {
-    .my-text p {
-        padding: 0 25px;
-        background-color: #ffffff;
-    }
-    .progect-img  {
-        width: 100%;
-        min-height: 477px;
-    }
-    .proect-conteiner {
-        max-height: 1620px;
-    }
-} */
 
 
 /*скилл*/
@@ -206,7 +182,7 @@ p {
     background-color: white;
 }
 
-.skills-conteiner {
+.skills__conteiner {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -215,44 +191,45 @@ p {
     margin:100px auto ;  
 }
 
-.skills-boss {
+.skills__knowledge {
     display: block;
     align-items: center;
     justify-content: center;
     padding: 70px 0px   ;
 }   
 
-.skills-text-title {
+.skills__title {
     font-weight:bold ;
     font-size: 32px;
     color: black;
     margin: 0px 0px 40px;
 }
 
-.skills-line-one {
+.skills__scale-one {
     margin: 20px 0px;  
     width: 445px;
     height: 4px;
     background-image: linear-gradient(50deg, #34547A 70%, #EEEFF1 50% );
 }
 
-.skills-line-two {
+.skills__scale-two {
     margin: 20px 0px;
     width: 445px;
     height: 4px;
     background-image: linear-gradient(50deg, #34547A 50%, #EEEFF1 50% );
 }
-.skills-line-three {
+.skills__scale-three {
     margin: 20px 0px;
     width: 445px;
     height: 4px;
     background-image: linear-gradient(50deg, #34547A 79%, #EEEFF1 50% );
 }
 
-.skills-img {
+.skills_img {
     width: 500px;
     height: 400px;
 }
+
 
 /*работа и код*/
 
@@ -263,7 +240,7 @@ p {
     
 }
 
-.code-boss {
+.code__conteiner{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -272,14 +249,14 @@ p {
     margin:0px auto ; 
  }   
 
-.code-text-title {
+.code__title {
     font-weight:bold ;
     font-size: 32px;
     color: black;
     margin: 80px 0px 40px;
 }
 
-.code-text {
+.code__lorem {
     text-align: center;
     width: 540px;
     height: 67px;
@@ -287,18 +264,18 @@ p {
 } 
 
 
-.code-background {
+.code__video {
     position: relative;  
     }
         
-.code-img {
+.code__img {
     max-width: 1110px;
     max-height: 600px;
     width: 100%;
     height: 100%;
     }
         
-.code-img-vector {
+.code__start {
     height: 20%;
 
     position: absolute;
@@ -306,6 +283,7 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     }
+    
 
 /*планирование*/
 
@@ -316,22 +294,22 @@ p {
     place-items: center;
     place-self: center;
     padding-bottom: 100px;
-}
-
-.record-img-a{
+    }
+    
+.record__img-a{
     width: 100%;
     height: 100%;
     position: relative;
-}
-
-.record-img {
+    }
+    
+.record__img {
     max-width: 480px;
     max-height: 480px;
     width: 100%;
     height: 100%;
-}
-
-.record-img-a:before {
+    }
+    
+.record__img-a:before {
     content: '';
     position: absolute;
     top: 0;
@@ -342,9 +320,9 @@ p {
     opacity: 0;
     z-index: 1;
     transition: opacity 0.4s ease;
-}
-
-.record-img-a:after {
+    }
+    
+.record__img-a:after {
     content: '';
     position: absolute;
     top: 0;
@@ -354,12 +332,14 @@ p {
     background: rgba(52, 84, 122, .8);
     opacity: 0;
     transition: opacity 0.4s linear;
-}
-
-.record-img-a:hover:before,
-.record-img-a:hover:after {
+   }
+    
+.record__img-a:hover:before,
+.record__img-a:hover:after {
     opacity: 1;
-}
+    }
+    
+
 
 /*хотите веб сайт*/
 .review {
@@ -373,7 +353,7 @@ p {
     padding-bottom: 100px;
 }
 
-.review-conteiner {
+.review__conteiner {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -381,7 +361,7 @@ p {
 }
 
 
-.review-text-title {
+.review__title {
     text-align: center;
     font-weight:bold ;
     font-size: 32px;
@@ -389,54 +369,54 @@ p {
     margin: 80px 0px 40px;
 }
 
-.review-text {
+.review__lorem {
     text-align: center;
     width: 540px;
     height: 67px;
     margin: 0px 0px 60px;
 } 
 
-.input-flex {
+.review__input {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.input-flex input[type=text] {
+.review__input input[type=text] {
     height: 24px;
     font-size: 15px;
     padding-left: 25px;
 }
 
-.review-one {
+.review__one {
     width: 255px;
     height: 50px;
     border: none;
     margin: 0px;
 }
 
-.review-sms {
+.review__sms {
     width: 540px;
     height: 175px;
     border: none;
     margin: 0px 0px 20px;
 }
 
-.sms input[name="code"] {
+.review__sms input[name="code"] {
     height: 175px;
     font-size: 15px;
     padding-left: 25px;
 }
 
-.sms {
+.review__sms {
    margin: 20px 0px;
    height: 200px;
    width: 97%;
    border: none;
 }
 
-.button-end {
+.review__button {
     display: flex;
     justify-content: center;
     width: 200px;
@@ -445,7 +425,7 @@ p {
 
 }
 
-.button-click-two { 
+.review__button-two { 
     color:white;
     width: 225px;
     height: 65px;
@@ -464,7 +444,7 @@ p {
     height: 151px;
 }
 
-.footer-conteiner{
+.footer__conteiner{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -474,26 +454,33 @@ p {
     margin:25px auto ;
 }
 
-.footer-end {
+.footer__creator {
    margin:0px 0px 15px; 
 }
 
-.footer-end-two {
+.footer__creator-text{
     font-size: 13px;
 }
-.footer-img {
+.footer__img {
     width: 175px;
     height: 40px;
 }
 
 
 @media (max-width: 1279px) {
+
+    * {
+        font-size: 10px;
+        line-height: 19.2px;
+        color: #727272;
+    }
+
     /*шапка*/
     .header {
         height: 50px;
     }
 
-    .main-conteiner {
+    .header__conteiner {
         display: flex;
         flex-direction: column;
         align-items:flex-start;
@@ -501,27 +488,27 @@ p {
         margin: 0px;
     }
 
-    .main-logo {
+    .header__logo {
         margin: 0px 20px;
         height: 100px;
     }
 
-    .wd{
+    .wd-logo{
         width: 70px;
         height: 30px;
     }
     
 
-    .nav-navigation {
+    .menu__navigation {
         display: none;
     }
   /*дизайн и верстка*/
 
-  .intro-section {
-    height: 300px;
+  .intro {
+    height: 350px;
   }
 
-    .p-design {
+   .design-link {
         padding-bottom: 50px;
         max-width: 322px;
         width: 100%;
@@ -535,34 +522,41 @@ p {
         width: 800px;
         height: 250px;
        
+        top: auto;
+        width: 200px
      }
 
-     .p-design {
+     .design-text {
         width: 400px;
         height: 250px;
         font-size: 10px;
     }
 
-    .design { 
+    .design-link__text { 
         font-weight: bold;
         font-size: 20px;
-        margin: 0px 0px 10px;
+        margin: 0px 0px 20px;
     
     }
 
+    .design-link__lorem {
+        width: 300px;
+        margin: 0px 0px 20px;
+    }
 
-     .p-text {
+
+     .text_lorem {
         text-align: center;
         width: 300px;
         margin: 0px 0px 20px;
      }
 
-     .button-click { 
+     .design-link__button    { 
         width: 150px;
         height: 50px;
      }
 
-    .intro-conteiner {
+    .intro__conteiner {
         display: flex;
         flex-direction: column; 
         justify-content: center;
@@ -570,50 +564,45 @@ p {
  
     }
     
-    .img-intro {
+    .img__intro {
         display: flex;
         justify-content: center;
         margin:0px; 
         
     }
 
-    .comp{
+    .computer{
         width: 170px;
         height: 120px; 
         margin-top: -150px;
     }
-
-    .p-design {
-        top: auto;
-        width: 200px;
-    }
-
+    
     /*обо мне*/
 
-    .about-my-conteiner {
+    .information__conteiner {
         height: 200px;
     }
 
-    .my-text {
+    .information__text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .my-center {
+    .information__about-me {
         font-size: 20px;
         height: 0px;
         margin: 0px 0px 50px;
     }
 
-    .my-center-text{
+    .information__lorem {
         width: 300px;
     }
 
     /*проект карточки*/
 
-    .progect-line {
+    .progect__line{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr ;
         grid-template-columns: 1fr 1fr;
@@ -626,7 +615,7 @@ p {
 
     /*мои навыки*/
 
-    .skills-conteiner{
+    .skills__conteiner{
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -634,29 +623,29 @@ p {
         margin: 0px auto;
     }
 
-    .skills-text-title {
+    .skills__title {
         font-size: 20px;
         margin: 0px 0px 40px;
     }
     
-    .skills-line-one {
+    .skills__scale-one {
         margin: 10px 0px;  
         width: 300px;
         height: 2px;
     }
     
-    .skills-line-two {
+    .skills__scale-two {
         margin: 10px 0px;
         width: 300px;
         height: 2px;
     }
-    .skills-line-three {
+    .skills__scale-three {
         margin: 10px 0px;
         width: 300px;
         height: 2px;
     }
 
-    .skills-img {
+    .skills_img {
         width: 300px;
         height: 250px;
     }
@@ -667,18 +656,18 @@ p {
         background-color: #EEEFF1;
     }
 
-    .code-boss {
+    .code__conteiner {
         height: 550px;
     }
 
-    .code-text-title {
+    .code__title {
         font-weight: bold;
         font-size: 20px;
         color: black;
         margin: 40px 0px 40px;
     }
 
-    .code-text {
+    .code__lorem {
         width: 300px;
     }
 
@@ -696,7 +685,7 @@ p {
 
 
     /*хотите веб сайт*/
-    .review-conteiner{
+    .review__conteiner{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -713,7 +702,7 @@ p {
         padding-bottom: 0px;
     }
 
-    .review-text-title {
+    .review__title {
         text-align: center;
         font-weight: bold;
         font-size: 20px;
@@ -721,7 +710,7 @@ p {
         margin: 40px 0px 40px;
     }
 
-    .review-text {
+    .review__lorem {
         text-align: center;
         width: 300px;
         height: 67px;
@@ -729,7 +718,7 @@ p {
     }
 
     
-    .input-flex {
+    .review__input {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -737,41 +726,41 @@ p {
         gap: 15px;
     }
 
-    .input-flex input[type=text] {
+    .review__input input[type=text] {
         font-size: 10px;
     }
     
-    .sms {
+    .review__sms {
         margin: 20px 0px;
         height: 200px;
         width: 100%;
     }
 
-    .button-click-two {
+    .review__button-two {
         width: 150px;
-        height: 50px;
+        height: 40px;
     }
 
     
 
     /*footer*/
 
-    .footer-logo {
+    .footer__logo {
         margin: 0px 15px;
     }
   
-    .footer-end {
+    .footer__creator {
         color: white;
         font-size: 13px;
         margin:0px 0px 15px; 
      }
      
-     .footer-end-two {
+     .footer__creator-text {
         color: white;
          font-size: 8px;
      }
 
-    .footer-img {
+    .footer__img {
         width: 100px;
         height: 20px;
         margin: 0px 15px;
