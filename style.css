@@ -1,268 +1,205 @@
 body{
     font-family: "Roboto", sans-serif;
-
+    background-color: #EEEFF1;
     font-size: 16px;
     line-height: 1.6;
     color: #727272;
-    background-color: #EEEFF1;
+    height: 100%;
+    width: 100%;
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
+}   
+
+h1 {
+    color: black;
+    font-size: 48px;
+    line-height: 78.75px;
 }
 
-p {
-    margin: 0;
+h2 {
+    color: black;
+    font-size: 32px;
+    line-height: 37.5px;
 }
 
 .main {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: #EEEFF1;
-    width: 100%; 
-    margin: 0px auto;
-    
+    justify-content: space-evenly;
+    line-height: 1.6;
 }
 
+/*шапка*/
+
 .header {
-    display: flex;
-    flex-direction: column;
-    min-height: 100px;
-    height: 100%;
-    justify-content: space-evenly;
+    margin: 57px 0px 0px;
+    background-color: #EEEFF1;
 }
 
 .header__conteiner {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 50px;
+    align-items: center;
     max-width: 1120px;
-    margin:60px auto ;
+    margin: 0px auto;
 }
 
-/*навигация сайта*/
-.wd-logo {
-    width: 96px;
-    height: 50px;
-}
-
-.menu__navigation {
-    display: inline-block;
-    vertical-align: top;
-    margin: 5px 25px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    align-items: center ;
+.text-menu {
     color: #000000;
     text-decoration: none;
     transform: color .2s linear;
+    padding: 0px 25px;
+
 }
 
-.menu__navigation:hover {
+.text-menu:hover {
     color: #34547A;
 }
 
-/************************************************/
 
-/*ДИЗАЙН И ВЕРСТКА*/
-.intro { 
-    width: 100%;
-    height: 550px;
-    background-color: #EEEFF1;
+/*Дизайн и верстка*/
+
+.intro {
+    margin: 162px 0px;
 }
 
 .intro__conteiner {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 450px;
+    align-items: center;  
     max-width: 1120px;
-    margin:60px auto ;  
+    margin: 0px auto;
 }
 
-.img__intro {
-    margin: 30px 50px; 
+.intro__img {
+    margin-top: -80px;
+    margin-left: 40px;
 }
 
-.intro_link {
-
-    margin: 0px 0px 0px 101px ;
-    width: 800px;
-    height: 250px;
-   
+.design {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 0px 0px 60px;
 }
 
-.design-link__text   { 
-    margin: 0px 0px 50px;
-    font-weight: bold;
-    font-size: 48px;
-    color: black;
-
+.title {
+    padding: 0px 0px 60px;
 }
 
-.design-link__lorem {
-    width: 500px;
-    margin: 0px 0px 50px;
+.text {
+    width: 540px;
+    padding: 0px 0px 60px;
 }
 
-#design-button{
+.button {
     background: #34547A;
-}
-
-.design-link__button {
-    
     color:white;
     width: 225px;
     height: 65px;
     border: none;
 }
 
-
 /*обо мне*/
 
 .information {
     background-color: white;
-}
+    height: 300px;
+ }
 
 .information__conteiner{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    max-width: 1120px; 
-    margin:0px auto ; 
-    background-color: white;
+    justify-content:center;
+    align-items: center;  
+    max-width: 1120px;
+    margin: 0px auto;
+    
 }
 
- .information__text {
+.top {
     text-align: center;
-    width: 540px;
-    height: 200px;
-} 
-
-.information__about-me {
-    text-align: center;
-    font-weight:bold ;
     font-size: 32px;
     color: black;
-    margin: 10px 0px 40px;
+    padding: 60px 0px 60px;
 }
 
+.lorem-text {
+    text-align: center;
+    width: 540px;
+    height: 147px;
+}
 
-/*карточки проект*/
+/*проекты*/
 
 .proect {
     background-color: #34547A;
+    height: 250px;
 }
 
 .proect__conteiner {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;  
+    padding: 100px 0px;
 }
 
-.progect__line{
-    margin: 0px 20px;
-    width: 141px;
-    height: 51px;
+.proect__img {
+    padding: 0px 49px 0px 0px;
 }
 
 
-
-/*скилл*/
+/*мой скил*/
 
 .skills {
-    width: 100%;
-    height: 650px;
     background-color: white;
 }
 
 .skills__conteiner {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-
     max-width: 1120px;
-    margin:100px auto ;  
+    margin: 0px auto;
 }
 
 .skills__knowledge {
     display: block;
     align-items: center;
     justify-content: center;
-    padding: 70px 0px   ;
+    padding: 70px 0px;
+    margin: 100px 0px;
 }   
 
 .skills__title {
-    font-weight:bold ;
-    font-size: 32px;
-    color: black;
-    margin: 0px 0px 40px;
+   margin: 0px 0px 50px;
 }
 
-.skills__scale-one {
-    margin: 20px 0px;  
+.skills__scale {
+    margin: 20px 0px 20px;  
     width: 445px;
     height: 4px;
     background-image: linear-gradient(50deg, #34547A 70%, #EEEFF1 50% );
 }
 
-.skills__scale-two {
-    margin: 20px 0px;
-    width: 445px;
-    height: 4px;
-    background-image: linear-gradient(50deg, #34547A 50%, #EEEFF1 50% );
+.skills__img {
+    width: 555px;
+    height: 450px;
+    margin: 100px;
 }
-.skills__scale-three {
-    margin: 20px 0px;
-    width: 445px;
-    height: 4px;
-    background-image: linear-gradient(50deg, #34547A 79%, #EEEFF1 50% );
-}
-
-.skills_img {
-    width: 500px;
-    height: 400px;
-}
-
 
 /*работа и код*/
 
-.code {
-    width: 100%;
-    height: 1004px;
-    background-color: #EEEFF1;
-    
-}
-
-.code__conteiner{
+.code__conteiner {
     display: flex;
+    justify-content:center;
     align-items: center;
     flex-direction: column;
     max-width: 1120px;
-    height: 950px;
-    margin:0px auto ; 
- }   
-
-.code__title {
-    font-weight:bold ;
-    font-size: 32px;
-    color: black;
-    margin: 80px 0px 40px;
+    margin: 0px auto;
 }
-
-.code__lorem {
-    text-align: center;
-    width: 540px;
-    height: 67px;
-    margin: 0px 0px 60px;
-} 
-
 
 .code__video {
     position: relative;  
@@ -273,6 +210,7 @@ p {
     max-height: 600px;
     width: 100%;
     height: 100%;
+    padding: 0px 0px 60px;
     }
         
 .code__start {
@@ -283,7 +221,6 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     }
-    
 
 /*планирование*/
 
@@ -293,18 +230,14 @@ p {
     grid-template-rows: 1fr 1fr;
     place-items: center;
     place-self: center;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
     }
     
 .record__img-a{
-    width: 100%;
-    height: 100%;
     position: relative;
     }
     
 .record__img {
-    max-width: 480px;
-    max-height: 480px;
     width: 100%;
     height: 100%;
     }
@@ -339,24 +272,20 @@ p {
     opacity: 1;
     }
     
-
-
 /*хотите веб сайт*/
 .review {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 540px;
-    width: 100%;
     align-self: center;
-    padding-bottom: 100px;
 }
 
 .review__conteiner {
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 540px;
     margin:20px auto ; 
 }
 
@@ -394,7 +323,7 @@ p {
     height: 50px;
     border: none;
     margin: 0px;
-}
+}   
 
 .review__sms {
     width: 540px;
@@ -432,7 +361,6 @@ p {
     border: none;
 }
 
-
 /*конец*/
 
 .footer {
@@ -449,7 +377,7 @@ p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height:150px;
     max-width: 1120px;  
     margin:25px auto ;
 }
@@ -475,9 +403,21 @@ p {
         color: #727272;
     }
 
+    h1 {
+        font-size: 36px;
+        line-height: 36px;
+        color: black;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 37.5px;
+        color: black;
+    }
+
     /*шапка*/
     .header {
-        height: 50px;
+        margin: 0px;
+        height: 120px;
     }
 
     .header__conteiner {
@@ -489,72 +429,51 @@ p {
     }
 
     .header__logo {
-        margin: 0px 20px;
+        margin: 20px;
         height: 100px;
     }
 
-    .wd-logo{
-        width: 70px;
-        height: 30px;
-    }
-    
-
-    .menu__navigation {
+    .text-menu {
         display: none;
     }
   /*дизайн и верстка*/
 
   .intro {
-    height: 350px;
+    height: 300px;
   }
 
-   .design-link {
-        padding-bottom: 50px;
-        max-width: 322px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        padding-bottom: 100px;
+  .intro__conteiner {
+    margin-top: -100px;
+  }
 
-        margin: 0px ;
-        width: 800px;
-        height: 250px;
-       
-        top: auto;
-        width: 200px
-     }
+  .intro__img {
+    margin-left: 0px;
+  }
 
-     .design-text {
-        width: 400px;
-        height: 250px;
-        font-size: 10px;
-    }
+  .intro__frame {
+    width: 255px;
+    height: 175px;
+    margin-left: -50px;
+    margin: 0px 0px 51px;
+  }
 
-    .design-link__text { 
-        font-weight: bold;
-        font-size: 20px;
-        margin: 0px 0px 20px;
-    
-    }
+  .title {
+    padding: 0px 0px 44px;
+}
 
-    .design-link__lorem {
-        width: 300px;
-        margin: 0px 0px 20px;
-    }
+  .text {
+    text-align:center;
+    width: 300px;
+    padding: 0px 0px 44px;
+  }
+
+  .design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 
-     .text_lorem {
-        text-align: center;
-        width: 300px;
-        margin: 0px 0px 20px;
-     }
-
-     .design-link__button    { 
-        width: 150px;
-        height: 50px;
-     }
 
     .intro__conteiner {
         display: flex;
@@ -563,101 +482,72 @@ p {
         align-items: center;       
  
     }
-    
-    .img__intro {
-        display: flex;
-        justify-content: center;
-        margin:0px; 
-        
-    }
 
-    .computer{
-        width: 170px;
-        height: 120px; 
-        margin-top: -150px;
-    }
     
     /*обо мне*/
 
-    .information__conteiner {
-        height: 200px;
-    }
-
-    .information__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .information__about-me {
-        font-size: 20px;
-        height: 0px;
-        margin: 0px 0px 50px;
-    }
-
-    .information__lorem {
+    .lorem-text {
+        text-align: center;
         width: 300px;
     }
 
     /*проект карточки*/
 
-    .progect__line{
+    .proect {
+        height: 376px;
+    }
+
+    .proect__conteiner{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr ;
         grid-template-columns: 1fr 1fr;
         place-items: center;
         place-self: center;
+        padding: 50px 0px;
+    }
 
-        width: 80px;
-        height: 30px;
+    .proect__img {
+        margin: 20px 0px;
     }
 
     /*мои навыки*/
+    
+    .skills {
+        height: 1000px;
+    }
 
     .skills__conteiner{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         align-items: center;
         margin: 0px auto;
     }
 
-    .skills__title {
-        font-size: 20px;
-        margin: 0px 0px 40px;
-    }
-    
-    .skills__scale-one {
-        margin: 10px 0px;  
-        width: 300px;
-        height: 2px;
-    }
-    
-    .skills__scale-two {
-        margin: 10px 0px;
-        width: 300px;
-        height: 2px;
-    }
-    .skills__scale-three {
-        margin: 10px 0px;
-        width: 300px;
-        height: 2px;
+    .skills__knowledge {
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-end;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
     }
 
-    .skills_img {
-        width: 300px;
-        height: 250px;
+    .skills__scale {
+        width: 339px;
+    }
+
+    .skills__img {
+        width: 339px;
+        height: 275px;
+        margin: 100px;
     }
 
     /*работа и код*/
+
     .code {
         width: 100%;
         background-color: #EEEFF1;
-    }
-
-    .code__conteiner {
-        height: 550px;
     }
 
     .code__title {
@@ -680,12 +570,11 @@ p {
         grid-template-columns: 1fr 1fr;
         place-items: center;
         place-self: center;
-        /* padding-bottom: 100px; */
     }
 
 
     /*хотите веб сайт*/
-    .review__conteiner{
+    .review__conteiner {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -695,7 +584,7 @@ p {
     } 
 
     .review {
-
+        display: contents;
         max-width: 540px;
         width: 100%;
         align-self: center;
