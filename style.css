@@ -217,7 +217,7 @@ h2 {
     height: 20%;
 
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     }
@@ -508,6 +508,8 @@ h2 {
 
     .proect__img {
         margin: 20px 0px;
+        height: 40px;
+        padding: 0px 0px 0px 0px
     }
 
     /*мои навыки*/
@@ -534,13 +536,13 @@ h2 {
     }
 
     .skills__scale {
-        width: 339px;
+        width: 309px;
     }
 
     .skills__img {
-        width: 339px;
+        width: 309px;
         height: 275px;
-        margin: 100px;
+        margin:100px 0px;
     }
 
     /*работа и код*/
@@ -560,7 +562,9 @@ h2 {
     .code__lorem {
         width: 300px;
     }
-
+    .code__start {
+        top: 35%;
+    }
 
     /*планирование*/
 
