@@ -233,8 +233,6 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    place-items: center;
-    place-self: center;
     padding-bottom: 20px;
     }
     
@@ -547,11 +545,6 @@ h2 {
 
     /*работа и код*/
 
-    .code {
-        width: 100%;
-        background-color: #EEEFF1;
-    }
-
     .code__title {
         font-weight: bold;
         font-size: 20px;
@@ -572,8 +565,6 @@ h2 {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        place-items: center;
-        place-self: center;
     }
 
 
@@ -664,3 +655,5 @@ h2 {
     }
 
 }
+
+
